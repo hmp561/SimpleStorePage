@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <title>Meloman.com</title>
+    <link rel="icon" type="image/x-icon" href="grafika/logo.png">
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">
+            <i class="fa-solid fa-headphones"></i>
+            <span>Maloman.com</span>
+        </h1>
+        <!-- <div id=""> -->
+            <label id="search-holder">
+                <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+                <input type="search" name="search" id="search" placeholder="Wyszukaj w naszym sklepie...">
+            </label>
+        <!-- </div> -->
+        <div id="icons">
+            <div id="cart-holder" class="icon">
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <div id="cart-counter"></div>
+                <div id="cart-list" class="list">
+                    <div id="clear-cart"><span>Wyczyść koszyk</span></div>
+                </div>
+            </div>
+                        
+            <i id="favorite" class="fa-regular fa-heart icon"></i>
+            
+            <i id="accout" class="fa-regular fa-user icon"></i>
+        </div>
+        <div id="icon-small">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <nav id="categories">
+        <!-- tu kategoria np. marki albo typy, pomysł porzucony, może jak będzie czas-->
+    </nav>
+    <div id="holder-products">
+    <main id="products">
+        <div id="empty" class="hidden-brak">Brak wyników</div>
+        <!-- (div[class=produkt]>(img+h2[class=produkt-title]+p[class=produkt-def]+span[class=produkt-price]+button[class=produkt-addcart])) -->
+        <!-- 
+            <span class="addcart-text">Dodaj do koszyka</span>
+            <i class="fa-solid fa-cart-plus"></i>
+         -->
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/marsshall-douszne-bezprzewodowe-1.jpg" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">MARSHALL Motif II </h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price"> 400 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/apple-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">APPLE AirPods Pro</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">799 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jabra-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JABRA Elite 3</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price"> 1.50 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/apple-nauszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">APPLE AirPods Max</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">700 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jbl-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JBL Tune Flex</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">350 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/oppo-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">OPPO Enco Buds2</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">409 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/noname-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">PLANTRONICS</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">50 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/realme-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">REALME T100</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">299 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/xiaomi-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">XIAOMI Mi True</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price"> 150 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/philips-douszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">PHILIPS TAT1207BK</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">199 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/noname-douszne-bezprzewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">SOUNDCORE Space</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price"> 129 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/oppo-douszne-bezprzewodowe-3.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">OPPO Enco Buds2</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">234 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jbl-douszne-bezprzewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JBL Tune Beam</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price"> 350 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/marsshall-nauszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">MARSHALL Major IV</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">563 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/oppo-douszne-bezprzewodowe-4.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">OPPO Enco Buds2</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">563 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jabra-douszne-bezprzwodowe-3.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JABRA Talk 25</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">135 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jbl-douszne-przewodowe.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JBL T110</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">100 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jabra-douszne-bezprzewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JABRA Elite 4 Active</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">999 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/apple-douszne-przewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">APPLE EarPods</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">9999 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/oppo-douszne-bezprzewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">OPPO Enco Buds2</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">342 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jbl-nauszne-bezprzewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JBL Tune 720BT</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">200 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/apple-douszne-bezprzewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">Apple Air Pods</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">599 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jbl-nauszne-bezprzewodowe-3.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JBL Tune 720BT</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">200 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/apple-douszne-przewodowe-2.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">APPLE EarPods</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">4121 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>        
+        <div class="produkt">
+            <div class="holder-produkt-im">
+                <img src="grafika/jbl-nauszne-bezprzewodowe-1.webp" alt="" class="produkt-img">
+            </div>
+            <h2 class="produkt-title">JBL Tune 520</h2>
+            <p class="produkt-def">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo unde alias beatae accusantium. Maxime neque, assumenda provident quo ipsam possimus libero in, dolore soluta quia quis expedita doloribus omnis!</p>
+            <div class="holder-price">
+                <span class="produkt-price">210 zł</span>
+            </div>
+            <button class="produkt-addcart">
+                <span class="addcart-text">Dodaj do koszyka</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <i class="fa-regular fa-circle-xmark close-button"></i>
+        </div>
+    </main>  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
